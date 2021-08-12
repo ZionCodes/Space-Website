@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+.intro {
+    @include flex;
+    justify-content: space-around;
+   /*  margin: 1rem; */
+   
+
+    margin-top: 4rem;
+    
+
+    .intro-text {
+        @include flex;
+
+        h1 {
+            color: #501d8f;
+             font-weight: 600;
+             text-align: left;
+        }
+        p {
+            color: white;
+             font-weight: 600;
+             text-align: left;
+             font-size: 1.5rem
+        }
+
+        form {
+            max-width: 440px;
+            input {
+                padding: 1rem 2rem;
+                border-bottom-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                border: none;
+                
+                
+                
+            }
+
+            button {
+                padding: 1rem;
+                margin-top: .5rem;
+                text-transform: uppercase;
+                background-color: #32007f;
+                color: rgb(153, 131, 131);
+                font-size: 1rem;
+                border: none;
+
+                &:hover {
+                    background-color: #501d8f;
+                    color: whitesmoke;
+
+                }
+            }
+        }
+
+        
+    }
+
+    .intro-pic {
+        @include flex;
+        
+        img  {
+            max-height: 550px;
+            max-width: 100%;
+
+        }
+    }
+}
+
+ @media screen and (max-width: 767px) {
+     .intro {
+         flex-direction: column;
+         margin: .5rem;
+         margin-top: 6rem;
+         margin-bottom: 1rem;
+         
+
+         
+     }
+
+     .intro-text {
+         width: 100%;
+         justify-content: left;
+         
+         h1 {
+             color: white;
+             font-weight: 600;
+             text-align: center;
+            
+  
+
+             
+         }
+
+         p {
+             text-align: left;
+             color: rgb(153, 131, 131);
+
+         }
+
+         form {
+            margin-top: 1.5rem;
+            width: 100%;
+
+            input {
+                display: block;
+                width: 100%;
+                padding: 1rem;
+                border-bottom-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                border: none;
+                
+            }
+            button {
+                display: block;
+                padding: 1rem;
+                width: 100%;
+                margin-top: .5rem;
+                text-transform: uppercase;
+                background-color: #32007f;
+                color: rgb(153, 131, 131);
+                font-size: 1rem;
+                border: none;
+
+                &:hover {
+                    background-color: #501d8f;
+                    color: whitesmoke;
+
+                }
+            }
+         }
+
+     }
+
+     .intro-pic {
+         img{
+             max-width: 100%;
+         }
+     }
+ }
+          
+
+ .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

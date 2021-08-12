@@ -1,0 +1,46 @@
+
+.pic-outer {
+        margin: .5rem;
+        padding: 1rem;
+
+        h2 {
+            color: blanchedalmond;
+            font-weight: 600;
+            font-style: oblique;
+            text-align: center;
+            text-decoration: wavy;
+            padding: 1rem;
+            margin-bottom: 0;
+        }
+    
+}
+
+.pic-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+
+    .image-container {
+        object-fit: cover;
+
+        
+        img {
+            max-width: 100%;
+            transition: opacity 0.25s ease-in-out;
+            
+            object-fit: cover;
+            min-height: 100%;
+            -webkit-min-height: 100%;
+            
+            
+        
+            &:hover {
+                opacity: .7;
+            }
+        }
+
+        
+                
+        
+    }
+}
