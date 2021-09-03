@@ -408,6 +408,7 @@ nav .logo img {
 
 nav .sign-up a {
   text-decoration: none;
+  color: #aaa;
 }
 
 nav .sign-up button {
@@ -423,6 +424,7 @@ nav .sign-up button {
 
 nav .sign-up button a {
   text-decoration: none;
+  color: #aaa;
 }
 
 nav .sign-up button a:visited {
